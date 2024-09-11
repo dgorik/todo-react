@@ -16,7 +16,7 @@ export function NewTodoForm(props) {
     return (
         <form onSubmit={handleSubmit} className="new-item-form">
             <div className="form-row">
-                <h2> This is your todo-zen 🧘‍♀️</h2>
+                <h2> Your Todo-Zen 🧘‍♀️</h2>
                 <label htmlFor="item"> New Item </label>
                 <input
                     value={newItem}
