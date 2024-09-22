@@ -3,6 +3,7 @@
     box-sizing: border-box;
 }
 
+html,
 body {
     background: #352f5b;
     color: #fff;
@@ -10,6 +11,14 @@ body {
     max-width: 400px;
     padding: 1rem;
     margin: auto;
+    height: 100%;
+    display: flex;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .new-item-form {
