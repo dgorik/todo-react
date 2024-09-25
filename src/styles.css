@@ -1,11 +1,12 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     box-sizing: border-box;
 }
 
 body {
-    background: rgb(255, 255, 255);
-    color: black;
+    background: #352f5b;
+    color: #fff;
+    font-size: 23px;
     max-width: 400px;
     padding: 1rem;
     margin: auto;
@@ -24,36 +25,26 @@ body {
     gap: 0.1rem;
 }
 
-.btn {
-    background: hsl(200, 100%, 50%, 0.1);
-    border: 1px solid hsl(200, 100%, 50%);
-    color: hsl(200, 100%, 50%);
-    padding: 0.25em 0.5em;
-    border-radius: 0.25em;
-    cursor: pointer;
-    outline: none;
-}
-
 .btn:hover,
 .btn:focus-visible {
     background: hsl(200, 100%, 50%, 0.2);
 }
 
-.btn.btn-danger {
+.btn-danger {
     background: hsl(0, 100%, 40%, 0.1);
     border: 1px solid hsl(0, 100%, 40%);
     color: hsl(0, 100%, 40%);
 }
 
-.btn.btn-danger:hover,
-.btn.btn-danger:focus-visible {
+.btn-danger:hover,
+.btn-danger:focus-visible {
     background: hsl(0, 100%, 40%, 0.2);
 }
 
 .new-item-form input {
     outline: none;
     border: 1px solid hsl(200, 100%, 40%);
-    background: hsl(200, 100%, 30%);
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 0.25em;
     padding: 0.25em 0.5em;
     color: hsl(200, 100%, 90%);
@@ -84,15 +75,16 @@ body {
 .list {
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
-    justify-content: center;
+    gap: 0.7rem;
     align-items: center;
 }
 
+
 .list li {
     display: flex;
+    justify-content: space-around;
     gap: 0.5rem;
-    justify-content: center;
+    color: #fff;
 }
 
 .list li label {
@@ -141,3 +133,39 @@ body {
 .list li:has(input:checked) label:hover::before {
     background: hsl(200, 100%, 30%);
 }
+
+/* Style for the add button */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    margin: 0.7rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    backface-visibility: hidden;
+    border: 0.3rem solid transparent;
+    border-radius: 3rem;
+}
+
+.btn {
+    border-color: transparent;
+    background-color: #fff;
+    color: #000;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+
+.btn {
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+}
+
+.btn:hover {
+    background: #423a6f;
+    color: #fff;
+}
+
+/*  */
